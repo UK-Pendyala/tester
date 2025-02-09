@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import WelcomeMessage from './WeleomeMessage';
 
 function App() {
   return (
     <div className = "header">
-      Hello my name is umakanth, this page is under construction
+      <WelcomeMessage />
     </div>
   );
 }
