@@ -37,6 +37,8 @@ jobs:
         key: ${{ secrets.AWS_PRIVATE_KEY }}
         source: "build/*"
         target: "/var/www/react-app"
+        strip_components: 1
+        # rm: true
 
     - name: Restart Server
       uses: appleboy/ssh-action@master
